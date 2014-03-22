@@ -1,0 +1,43 @@
+div.photo
+{
+	float:left;
+	margin:10px;
+	transition:width 0.5s, height 0.5s;
+	-webkit-transition:width 0.5s, height 0.5s, -webkit-transform 0.5s; /* Safari */
+}
+
+div.photo:hover
+{
+	transform:rotate(30deg);
+	-webkit-transform:rotate(30deg); /* Safari */
+}
+
+div.intro
+{
+	font-size:20px;
+	color:#A63C00;
+	font-weight:bold;
+	margin:20px 20px 20px 400px;
+}
+
+ul.social
+{
+	margin:40px;
+}
+
+ul.social li
+{
+	display:inline;
+	margin:10px;
+}
+
+div.course
+{
+	margin-left:10%;
+	margin-right:10%;
+}
+
+div.course table caption
+{
+	font-size:50px;
+}

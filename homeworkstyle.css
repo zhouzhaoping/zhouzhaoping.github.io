@@ -1,0 +1,73 @@
+
+div.homework
+{
+	width:75%;
+	padding:50px;
+	margin:0 auto;
+}
+
+div.homework h1
+{
+	background:#FF6700;
+	color:#1048A9;
+	border-radius: 7px 7px 7px 7px;
+}
+
+div.homework h1 a
+{
+	text-decoration: none;
+}
+
+div.homework ul 
+{
+	padding: 0;
+	list-style-type: none;
+	border-radius: 5px;
+	width: 100%;
+}
+
+div.homework li a 
+{
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	font: 22px Helvetica, Verdana, sans-serif;
+	background-color: #5DD0C0;
+	color: #1F0D67;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+div.homework li:first-child a 
+{
+	border-radius: 7px 7px 0 0;
+}
+
+div.homework li:last-child a 
+{
+	border-radius: 0 0 7px 7px;
+}
+
+div.homework li a:hover 
+{
+	padding-left: 20px;
+	color:white;
+	background-color: #00605A;
+	text-shadow: 5px 5px 5px black;
+}
+
+div.homework li a span 
+{
+	float: right;
+	visibility: hidden;
+	color: white;
+}
+
+div.homework li a:hover span 
+{
+	visibility: visible;
+}
