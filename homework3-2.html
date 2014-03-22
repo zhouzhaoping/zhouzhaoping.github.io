@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HW3-2_Zhouzhaoping's website</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css" />
+	<link rel="stylesheet" type="text/css" href="homework3-2style.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+	<!-- navbar -->
+	<div>
+		<ul class = "navigation">
+		<li><a href = "index.html">Home</a></li>
+		<li><a href = "http://162.105.146.183/b2evolution/blogs/index.php/zhouzhaoping/">My Blog</a></li>
+		<li><a id = "choice" href = "homework.html">Homework</a></li>
+		<li><a href = "aboutme.html">About me</a></li>
+		</ul>
+	</div>
+	<div class = "bar"></div>
+	<!-- navbar -->
+	
+	
+	<div class = "main">
+		<!-- Title -->
+		<div class = "title">
+			<p>Homework2 for Week 3</p>
+		</div>
+		<!-- Title end-->
+		
+		<!-- Survey -->
+		<div class = "survey">
+			<h1>Please do a survey</h1>
+			<form action = "/cgi-bin/collector.pl" method = "post">
+				<p>Your Name:<input type="text" name="name"/></p>
+				<p>Your Age:<input type="text" name="age"/></p>
+				<p>Your Gender:
+					<input type="radio" name="gender" value="female" checked="checked" />Female
+					<input type="radio" name="gender" value="male"/>Male
+				</p>
+				<p>Email Address:<input type="text" name="email" /></p>
+				<fieldset>
+					<input type="submit" value="Submit" />
+					<input type="reset" value="Reset" />
+				</fieldset>
+			</form>
+			<p>To see the results, click <a href = "../cgi-bin/display.pl"> here </a></p>
+		</div>
+		<!-- Survey end -->
+		
+	</div>
+	<div class = "end">Copyright © 周钊平（Zhou Zhaoping）</div>
+</body>
+
+</html>

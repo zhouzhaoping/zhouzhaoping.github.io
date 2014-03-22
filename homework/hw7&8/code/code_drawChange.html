@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Exported from Notepad++</title>
+<style type="text/css">
+span {
+	font-family: 'DejaVu Sans Mono';
+	font-size: 12pt;
+	color: #BDAE9D;
+}
+.sc0 {
+}
+.sc4 {
+	color: #FF3A83;
+}
+.sc5 {
+	color: #F6F080;
+}
+.sc6 {
+	color: #55E439;
+}
+.sc10 {
+	color: #FFAA00;
+}
+.sc11 {
+	color: #F8F8F8;
+}
+.sc16 {
+	color: #FFAA00;
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #2A211C; "><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">java</span><span class="sc10">.</span><span class="sc11">applet</span><span class="sc10">.</span><span class="sc11">Applet</span><span class="sc10">;</span><span class="sc0">
+</span><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">java</span><span class="sc10">.</span><span class="sc11">awt</span><span class="sc10">.*;</span><span class="sc0">
+
+</span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">class</span><span class="sc0"> </span><span class="sc11">drawChange</span><span class="sc0"> </span><span class="sc5">extends</span><span class="sc0"> </span><span class="sc11">Applet</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">paint</span><span class="sc10">(</span><span class="sc11">Graphics</span><span class="sc0"> </span><span class="sc11">g</span><span class="sc10">)</span><span class="sc0">
+    </span><span class="sc10">{</span><span class="sc0">
+        </span><span class="sc11">String</span><span class="sc0"> </span><span class="sc11">myColor</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">getParameter</span><span class="sc10">(</span><span class="sc6">"color"</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">String</span><span class="sc0"> </span><span class="sc11">myShape</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">getParameter</span><span class="sc10">(</span><span class="sc6">"shape"</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">String</span><span class="sc0"> </span><span class="sc11">myFill</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">getParameter</span><span class="sc10">(</span><span class="sc6">"fill"</span><span class="sc10">);</span><span class="sc0">
+        
+        </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myColor</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"black"</span><span class="sc10">))</span><span class="sc0">
+            </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">setColor</span><span class="sc10">(</span><span class="sc11">Color</span><span class="sc10">.</span><span class="sc11">black</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc5">else</span><span class="sc0"> </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myColor</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"red"</span><span class="sc10">))</span><span class="sc0">
+            </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">setColor</span><span class="sc10">(</span><span class="sc11">Color</span><span class="sc10">.</span><span class="sc11">red</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc5">else</span><span class="sc0"> </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myColor</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"green"</span><span class="sc10">))</span><span class="sc0">
+            </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">setColor</span><span class="sc10">(</span><span class="sc11">Color</span><span class="sc10">.</span><span class="sc11">green</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc5">else</span><span class="sc0"> </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myColor</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"blue"</span><span class="sc10">))</span><span class="sc0">
+            </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">setColor</span><span class="sc10">(</span><span class="sc11">Color</span><span class="sc10">.</span><span class="sc11">blue</span><span class="sc10">);</span><span class="sc0">
+        
+        </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myFill</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"no"</span><span class="sc10">))</span><span class="sc0">
+        </span><span class="sc10">{</span><span class="sc0">
+            </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myShape</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"round"</span><span class="sc10">))</span><span class="sc0">
+                </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">drawOval</span><span class="sc10">(</span><span class="sc4">20</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">20</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">);</span><span class="sc0">
+            </span><span class="sc5">else</span><span class="sc0"> </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myShape</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"rectangle"</span><span class="sc10">))</span><span class="sc0">
+                </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">drawRect</span><span class="sc10">(</span><span class="sc4">20</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">20</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc10">}</span><span class="sc0">
+        </span><span class="sc5">else</span><span class="sc0"> </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myFill</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"yes"</span><span class="sc10">))</span><span class="sc0">
+        </span><span class="sc10">{</span><span class="sc0">
+            </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myShape</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"round"</span><span class="sc10">))</span><span class="sc0">
+                </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">fillOval</span><span class="sc10">(</span><span class="sc4">20</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">20</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">);</span><span class="sc0">
+            </span><span class="sc5">else</span><span class="sc0"> </span><span class="sc5">if</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">myShape</span><span class="sc10">.</span><span class="sc11">equals</span><span class="sc10">(</span><span class="sc6">"rectangle"</span><span class="sc10">))</span><span class="sc0">
+                </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">fillRect</span><span class="sc10">(</span><span class="sc4">20</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">20</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc10">}</span><span class="sc0">
+    </span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc10">}</span></div></body>
+</html>

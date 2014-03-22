@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Objects</title>
+	<link rel="stylesheet" type="text/css" href="../../mystyle.css" />
+	<link rel="stylesheet" type="text/css" href="mystyle.css" />
+	<link rel="stylesheet" type="text/css" href="code1style.css" />
+	<link rel="shortcut icon" href="../../images/favicon.ico" />
+	<script type="text/javascript">
+	<!--
+		var tourOperator = "Ten Bellies Tours";
+		var hollist = new Array();
+		
+		function Holiday(destination, duration, cost) 
+		{
+			this.destination = destination;
+			this.duration    = duration;
+			this.cost        = cost;
+			this.agent       = tourOperator;     
+		}
+
+		function makeHoliday(dest, dur, cost) 
+		{
+			hol = new Holiday(dest, dur, cost);
+			hollist.push(hol);
+			outputObject();
+		}
+		
+		function outputObject()
+		{
+			var len = hollist.length;
+			var output = "<caption>All The Holidays</caption>" +
+						"<tr><th>Destination</th><th>Duration</th><th>Cost</th><th>Agent</th></tr>";
+			
+			for (i in hollist)
+			{
+				output += "<tr>";
+				for (f in hollist[i])
+					output += "<td>" + hollist[i][f] + "</td>";
+				output += "</tr>";
+			}
+			document.getElementById("tablecontent").innerHTML = output;	
+		}
+		
+		function addHoliday()
+		{
+			var dest = document.getElementById("dest").value;
+			var dur = document.getElementById("dur").value;
+			var cost = document.getElementById("cost").value;
+			if (dest == "") dest = "Unknown";
+			if (dur == "") dur = "Unknown";
+			if (cost == "") cost = "Unknown";
+			if (confirm("Please check the information:" + 
+					"\nDestination:" + dest +
+					"\nDuration:" + dur + 
+					"\nCost:" + cost))
+				makeHoliday(dest, dur, cost);
+		}
+	-->
+	</script>
+</head>
+
+<body>
+	<!-- navbar -->
+	<div>
+		<ul class = "navigation">
+		<li><a href = "../../index.html">Home</a></li>
+		<li><a href = "http://162.105.146.183/b2evolution/blogs/index.php/zhouzhaoping/">My Blog</a></li>
+		<li><a id = "choice" href = "../../homework.html">Homework</a></li>
+		<li><a href = "../../aboutme.html">About me</a></li>
+		</ul>
+	</div>
+	<div class = "bar"></div>
+	<!-- navbar -->
+	
+	
+	<div class = "main">
+		<!-- Hommwork1 -->
+		<div class = "title">
+			<p>Homework4 for Week 6</p>
+		</div>
+		<div class = "content">
+			
+			<h3>1、Declare a global variable to hold a list (array)  of holidays. 
+			Edit makeholiday so that it adds new holidays to the array. 
+			Make more holidays using makeHoliday.  
+			Write and call a function to loop over and display all the holidays in the array.</h3>
+			
+			<h4 class = "center">ADD INFORMATION</h4>
+			<p>Destination:<input type = "text" id = "dest" value = "Hainan, China"/>
+			Duration:<input type = "text" id = "dur" value = "10 Weeks"/>
+			Cost:<input type = "text" id = "cost" value = "$10000"/></p>
+			<input type = "button" style = "font-size:30px" value = "Add" onclick = "addHoliday()" />
+			
+			<table border = "1" style = "width:100%;" id = "tablecontent">
+			<caption>All The Holidays</caption>
+			<tr><th>Destination</th><th>Duration</th><th>Cost</th><th>Agent</th></tr>
+			</table>
+			
+			<table id = "foot-nav">
+			<tr>
+			<td><p class = "left"><a href = "popups.html" >&lt;&lt; Hommwork3:Pop Ups</a></p></td>
+			<td><p class = "center"><a href = "index.html">Return to Week6 Home</a></p></td>
+			<td><p class = "right"><a href = "wizardForm.html">Hommwork5:Wizard Form &gt;&gt;</a></p></td>
+			</tr>
+			</table>
+			
+		</div>		
+	</div>
+	<div class = "end">Copyright © 周钊平（Zhou Zhaoping）</div>
+</body>
+
+</html>

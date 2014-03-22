@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Exported from Notepad++</title>
+<style type="text/css">
+span {
+	font-family: 'DejaVu Sans Mono';
+	font-size: 12pt;
+	color: #BDAE9D;
+}
+.sc0 {
+}
+.sc1 {
+	color: #1E9AE0;
+}
+.sc2 {
+	color: #1E9AE0;
+}
+.sc3 {
+	color: #1E9AE0;
+}
+.sc4 {
+	color: #FF3A83;
+}
+.sc5 {
+	color: #F6F080;
+}
+.sc6 {
+	color: #55E439;
+}
+.sc10 {
+	color: #FFAA00;
+}
+.sc11 {
+	color: #F8F8F8;
+}
+.sc16 {
+	color: #FFAA00;
+}
+.sc17 {
+	color: #1E9AE0;
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #2A211C; "><span class="sc1">/*
+ * Sample.java
+ * Class description and usage here.
+ * Created on 15 October 2003
+ */</span><span class="sc0">
+
+</span><span class="sc16">package</span><span class="sc0"> </span><span class="sc11">internetics</span><span class="sc10">;</span><span class="sc0">
+
+</span><span class="sc3">/**
+ * </span><span class="sc17">@author</span><span class="sc3">  y2013g61
+ * </span><span class="sc17">@version</span><span class="sc3"> 1.2
+ */</span><span class="sc0">
+</span><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">javax</span><span class="sc10">.</span><span class="sc11">swing</span><span class="sc10">.*;</span><span class="sc0">
+</span><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">java</span><span class="sc10">.</span><span class="sc11">awt</span><span class="sc10">.*;</span><span class="sc0">
+</span><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">java</span><span class="sc10">.</span><span class="sc11">awt</span><span class="sc10">.</span><span class="sc11">event</span><span class="sc10">.*;</span><span class="sc0">
+</span><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">java</span><span class="sc10">.</span><span class="sc11">io</span><span class="sc10">.*;</span><span class="sc0">
+</span><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">java</span><span class="sc10">.</span><span class="sc11">util</span><span class="sc10">.</span><span class="sc11">Scanner</span><span class="sc10">;</span><span class="sc0">
+</span><span class="sc2">// import com.ralph.*;
+</span><span class="sc0"> 
+</span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">class</span><span class="sc0"> </span><span class="sc11">Sample</span><span class="sc0"> </span><span class="sc5">extends</span><span class="sc0"> </span><span class="sc11">JFrame</span><span class="sc0">
+       </span><span class="sc5">implements</span><span class="sc0"> </span><span class="sc11">ActionListener</span><span class="sc10">{</span><span class="sc0">
+
+  </span><span class="sc16">private</span><span class="sc0"> </span><span class="sc11">JButton</span><span class="sc0"> </span><span class="sc11">jButton1</span><span class="sc10">;</span><span class="sc0">  </span><span class="sc2">// this button is for pressing
+</span><span class="sc0">  </span><span class="sc16">private</span><span class="sc0"> </span><span class="sc11">JLabel</span><span class="sc0"> </span><span class="sc11">jLabel1</span><span class="sc10">;</span><span class="sc0">
+  </span><span class="sc16">private</span><span class="sc0"> </span><span class="sc11">String</span><span class="sc0"> </span><span class="sc11">name</span><span class="sc10">;</span><span class="sc0">
+  </span><span class="sc16">private</span><span class="sc0"> </span><span class="sc11">Scanner</span><span class="sc0"> </span><span class="sc11">input</span><span class="sc10">;</span><span class="sc0">
+
+  </span><span class="sc3">/** Creates new object ChooseFile */</span><span class="sc0">
+  </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc11">Sample</span><span class="sc10">()</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">initComponents</span><span class="sc10">();</span><span class="sc0">
+    </span><span class="sc11">name</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc6">""</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc11">selectInput</span><span class="sc10">();</span><span class="sc0">
+  </span><span class="sc10">}</span><span class="sc0">
+  
+  </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc11">Sample</span><span class="sc10">(</span><span class="sc11">String</span><span class="sc0"> </span><span class="sc11">name</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc5">this</span><span class="sc10">();</span><span class="sc0">
+    </span><span class="sc5">this</span><span class="sc10">.</span><span class="sc11">name</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">name</span><span class="sc10">;</span><span class="sc0">
+  </span><span class="sc10">}</span><span class="sc0">
+  
+  </span><span class="sc16">private</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">initComponents</span><span class="sc10">()</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">Color</span><span class="sc0"> </span><span class="sc11">bright</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">Color</span><span class="sc10">.</span><span class="sc11">red</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc11">jButton1</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">JButton</span><span class="sc10">();</span><span class="sc0">
+    </span><span class="sc11">jLabel1</span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">JLabel</span><span class="sc10">();</span><span class="sc0">
+
+    </span><span class="sc11">addWindowListener</span><span class="sc10">(</span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">WindowAdapter</span><span class="sc10">()</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+      </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">windowClosing</span><span class="sc10">(</span><span class="sc11">WindowEvent</span><span class="sc0"> </span><span class="sc11">evt</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+        </span><span class="sc11">exitForm</span><span class="sc10">(</span><span class="sc11">evt</span><span class="sc10">);</span><span class="sc0">
+      </span><span class="sc10">}</span><span class="sc0">
+    </span><span class="sc10">});</span><span class="sc0">
+    </span><span class="sc11">getContentPane</span><span class="sc10">().</span><span class="sc11">setLayout</span><span class="sc10">(</span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">java</span><span class="sc10">.</span><span class="sc11">awt</span><span class="sc10">.</span><span class="sc11">GridLayout</span><span class="sc10">(</span><span class="sc4">2</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">1</span><span class="sc10">));</span><span class="sc0">
+    </span><span class="sc11">jButton1</span><span class="sc10">.</span><span class="sc11">setBackground</span><span class="sc10">(</span><span class="sc11">Color</span><span class="sc10">.</span><span class="sc11">white</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc11">jButton1</span><span class="sc10">.</span><span class="sc11">setFont</span><span class="sc10">(</span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">Font</span><span class="sc10">(</span><span class="sc6">"Verdana"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">1</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">12</span><span class="sc10">));</span><span class="sc0">
+    </span><span class="sc11">jButton1</span><span class="sc10">.</span><span class="sc11">setForeground</span><span class="sc10">(</span><span class="sc11">bright</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc11">jButton1</span><span class="sc10">.</span><span class="sc11">setText</span><span class="sc10">(</span><span class="sc6">"Click Me!"</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc11">jButton1</span><span class="sc10">.</span><span class="sc11">addActionListener</span><span class="sc10">(</span><span class="sc5">this</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc11">jLabel1</span><span class="sc10">.</span><span class="sc11">setFont</span><span class="sc10">(</span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">Font</span><span class="sc10">(</span><span class="sc6">"Verdana"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">1</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">18</span><span class="sc10">));</span><span class="sc0">
+    </span><span class="sc11">jLabel1</span><span class="sc10">.</span><span class="sc11">setText</span><span class="sc10">(</span><span class="sc6">"Group 61"</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc11">jLabel1</span><span class="sc10">.</span><span class="sc11">setOpaque</span><span class="sc10">(</span><span class="sc5">true</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc11">getContentPane</span><span class="sc10">().</span><span class="sc11">add</span><span class="sc10">(</span><span class="sc11">jButton1</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc11">getContentPane</span><span class="sc10">().</span><span class="sc11">add</span><span class="sc10">(</span><span class="sc11">jLabel1</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc11">pack</span><span class="sc10">();</span><span class="sc0">
+  </span><span class="sc10">};</span><span class="sc0">
+  
+  </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">actionPerformed</span><span class="sc10">(</span><span class="sc11">ActionEvent</span><span class="sc0"> </span><span class="sc11">evt</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">System</span><span class="sc10">.</span><span class="sc11">out</span><span class="sc10">.</span><span class="sc11">print</span><span class="sc10">(</span><span class="sc6">"Talk to me "</span><span class="sc0"> </span><span class="sc10">+</span><span class="sc11">name</span><span class="sc10">+</span><span class="sc0"> </span><span class="sc6">" : "</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc5">try</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+      </span><span class="sc11">jLabel1</span><span class="sc10">.</span><span class="sc11">setText</span><span class="sc10">(</span><span class="sc11">input</span><span class="sc10">.</span><span class="sc11">next</span><span class="sc10">());</span><span class="sc0">
+    </span><span class="sc10">}</span><span class="sc0"> </span><span class="sc5">catch</span><span class="sc0"> </span><span class="sc10">(</span><span class="sc11">RuntimeException</span><span class="sc0"> </span><span class="sc11">ioe</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+      </span><span class="sc11">jLabel1</span><span class="sc10">.</span><span class="sc11">setText</span><span class="sc10">(</span><span class="sc6">"Ow! You pushed my button"</span><span class="sc10">);</span><span class="sc0">
+      </span><span class="sc11">System</span><span class="sc10">.</span><span class="sc11">err</span><span class="sc10">.</span><span class="sc11">println</span><span class="sc10">(</span><span class="sc6">"IO Error: "</span><span class="sc0"> </span><span class="sc10">+</span><span class="sc0"> </span><span class="sc11">ioe</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc10">}</span><span class="sc0">
+  </span><span class="sc10">}</span><span class="sc0">
+  
+  </span><span class="sc3">/** Exit this Application */</span><span class="sc0">
+  </span><span class="sc16">private</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">exitForm</span><span class="sc10">(</span><span class="sc11">WindowEvent</span><span class="sc0"> </span><span class="sc11">evt</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">System</span><span class="sc10">.</span><span class="sc11">exit</span><span class="sc10">(</span><span class="sc4">0</span><span class="sc10">);</span><span class="sc0">
+  </span><span class="sc10">}</span><span class="sc0">
+  
+  </span><span class="sc3">/** Initialise and Buffer input Stream */</span><span class="sc0">
+  </span><span class="sc16">private</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">selectInput</span><span class="sc10">()</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">input</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">Scanner</span><span class="sc10">(</span><span class="sc11">System</span><span class="sc10">.</span><span class="sc11">in</span><span class="sc10">);</span><span class="sc0">
+  </span><span class="sc10">}</span><span class="sc0">
+  
+  </span><span class="sc3">/** Getter for name prompt */</span><span class="sc0">
+  </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc11">String</span><span class="sc0"> </span><span class="sc11">getName</span><span class="sc10">()</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc5">return</span><span class="sc0"> </span><span class="sc11">name</span><span class="sc10">;</span><span class="sc0">
+  </span><span class="sc10">}</span><span class="sc0">
+  
+  </span><span class="sc3">/** Setter for name prompt */</span><span class="sc0">
+  </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">setName</span><span class="sc10">(</span><span class="sc11">String</span><span class="sc0"> </span><span class="sc11">name</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+  </span><span class="sc5">this</span><span class="sc10">.</span><span class="sc11">name</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">name</span><span class="sc10">;</span><span class="sc0">
+  </span><span class="sc10">}</span><span class="sc0">
+  
+  </span><span class="sc3">/**
+   * </span><span class="sc17">@param</span><span class="sc3"> args the command line arguments
+   */</span><span class="sc0">
+  </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">static</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">main</span><span class="sc10">(</span><span class="sc11">String</span><span class="sc0"> </span><span class="sc11">args</span><span class="sc10">[])</span><span class="sc0"> </span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">Sample</span><span class="sc10">(</span><span class="sc6">"Jess"</span><span class="sc10">).</span><span class="sc11">show</span><span class="sc10">();</span><span class="sc0">
+  </span><span class="sc10">}</span><span class="sc0">
+  
+</span><span class="sc10">}</span></div></body>
+</html>

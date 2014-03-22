@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="team.xsl" ?>
+<myteam xmlns:xsi =  "http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation = "team.xsd">
+<team>
+	<name>
+		<fullname>FC Barcelona</fullname>
+		<nickname>Barça</nickname>
+	</name>
+	<founded>29 November 1899 (114 years ago)</founded>
+	<local>
+		<ground>Camp Nou</ground>
+		<nation>Spain</nation>
+		<city>Barcelona</city>
+	</local>
+	<president>Sandro Rosell</president>
+	<manager>Gerardo Martino</manager>
+	<website>http://www.fcbarcelona.com/</website>
+	<emblem>barcelona.png</emblem>
+	
+	<staff>
+		<player>
+			<name>V.Valdés</name>
+			<number>1</number>
+			<position>Goalkeeper</position>
+			<nationality>Spain</nationality>
+			<birth>1982-01-14</birth>
+			<weight>78 kg</weight>
+			<height>183 cm</height>
+			<picture>1.jpg</picture>			
+		</player>
+		<player>
+			<name>Piqué</name>
+			<number>3</number>
+			<position>Defender</position>
+			<nationality>Spain</nationality>
+			<birth>1987-02-02</birth>
+			<weight>85 kg</weight>
+			<height>192 cm</height>	
+			<picture>3.jpg</picture>
+		</player>
+		<player>
+			<name>Fàbregas</name>
+			<number>4</number>
+			<position>Midfielder</position>
+			<nationality>Spain</nationality>
+			<birth>1987-05-04</birth>
+			<weight>75 kg</weight>
+			<height>179 cm</height>
+			<picture>4.jpg</picture>	
+		</player>
+		<player>
+			<name>Puyol</name>
+			<number>5</number>
+			<position>Defender</position>
+			<nationality>Spain</nationality>
+			<birth>1978-04-13</birth>
+			<weight>80 kg</weight>
+			<height>178 cm</height>
+			<picture>5.jpg</picture>	
+		</player>
+		<player>
+			<name>Xavi</name>
+			<number>6</number>
+			<position>Midfielder</position>
+			<nationality>Spain</nationality>
+			<birth>1980-01-25</birth>
+			<weight>68 kg</weight>
+			<height>170 cm</height>
+			<picture>6.jpg</picture>	
+		</player>
+		<player>
+			<name>Pedro</name>
+			<number>7</number>
+			<position>Forward</position>
+			<nationality>Spain</nationality>
+			<birth>1987-07-28</birth>
+			<weight>64 kg</weight>
+			<height>169 cm</height>
+			<picture>7.jpg</picture>			
+		</player>
+		<player>
+			<name>A.Iniesta</name>
+			<number>8</number>
+			<position>Midfielder</position>
+			<nationality>Spain</nationality>
+			<birth>1984-05-11</birth>
+			<weight>65 kg</weight>
+			<height>170 cm</height>
+			<picture>8.jpg</picture>	
+		</player>
+		<player>
+			<name>Alexis</name>
+			<number>9</number>
+			<position>Forward</position>
+			<nationality>Chile</nationality>
+			<birth>1988-12-19</birth>
+			<weight>74 kg</weight>
+			<height>169 cm</height>
+			<picture>9.jpg</picture>		
+		</player>
+		<player>
+			<name>Messi</name>
+			<number>10</number>
+			<position>Forward</position>
+			<nationality>Argentina</nationality>
+			<birth>1987-06-24</birth>
+			<weight>67 kg</weight>
+			<height>169 cm</height>
+			<picture>10.jpg</picture>	
+		</player>
+		<player>
+			<name>Neymar Jr.</name>
+			<number>11</number>
+			<position>Forward</position>
+			<nationality>Brasil</nationality>
+			<birth>1992-02-05</birth>
+			<weight>64.5 kg</weight>
+			<height>175 cm</height>
+			<picture>11.jpg</picture>		
+		</player>
+		<player>
+			<name>Mascherano</name>
+			<number>14</number>
+			<position>Midfielder</position>
+			<nationality>Argentina</nationality>
+			<birth>1984-06-08</birth>
+			<weight>74 kg</weight>
+			<height>174 cm</height>
+			<picture>14.jpg</picture>	
+		</player>
+		<player>
+			<name>Sergio</name>
+			<number>16</number>
+			<position>Midfielder</position>
+			<nationality>Spain</nationality>
+			<birth>1988-07-16</birth>
+			<weight>73 kg</weight>
+			<height>189 cm</height>
+			<picture>16.jpg</picture>		
+		</player>
+		<player>
+			<name>Jordi Alba</name>
+			<number>18</number>
+			<position>Defender</position>
+			<nationality>Spain</nationality>
+			<birth>1989-03-21</birth>
+			<weight>69 kg</weight>
+			<height>170 cm</height>
+			<picture>18.jpg</picture>				
+		</player>
+		<player>
+			<name>Dani Alves</name>
+			<number>22</number>
+			<position>Defender</position>
+			<nationality>Brasil</nationality>
+			<birth>1983-05-06</birth>
+			<weight>64 kg</weight>
+			<height>173 cm</height>
+			<picture>22.jpg</picture>		
+		</player>
+	</staff>
+</team>
+</myteam>

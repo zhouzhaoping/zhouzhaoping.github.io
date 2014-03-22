@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HW4-1_Zhouzhaoping's website</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css" />
+	<link rel="stylesheet" type="text/css" href="homework4-1style.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+	<!-- navbar -->
+	<div>
+		<ul class = "navigation">
+		<li><a href = "index.html">Home</a></li>
+		<li><a href = "http://162.105.146.183/b2evolution/blogs/index.php/zhouzhaoping/">My Blog</a></li>
+		<li><a id = "choice" href = "homework.html">Homework</a></li>
+		<li><a href = "aboutme.html">About me</a></li>
+		</ul>
+	</div>
+	<div class = "bar"></div>
+	<!-- navbar -->
+	
+	
+	<div class = "main">
+		<!-- Hommwork1 -->
+		<div class = "title">
+			<p>Homework1 for Week 4</p>
+		</div>
+	
+		<div class = "survey">
+			<h3>1、Give the SELECT command to answer the question Who will go to the party held in Peking University?</h3>
+			<ul>
+			<li>SELECT Guest_Name</li>
+			<li>FROM guest,party,guest_party</li>
+			<li>WHERE party.Party_Num=guest_party.Party_Num</li>
+			<li>AND guest_party.Guest_ID=guest.Guest_ID</li>
+			<li>AND Place='Peking University'</li>
+			</ul>
+			<h3>2、Figure out a way to obtain the column labels returned by mysql_fetch_array.</h3>
+			<ul>
+			<li>print(&quot;&lt;p&gt;The Column Labels is:&quot;);</li>
+			<li>&#36;row=mysql_fetch_array(&#36;result);</li>
+			<li>while(&#36;item = each(&#36;row))</li>
+			<li>{</li>
+			<li>&nbsp;&nbsp;&nbsp;&#36;label = &#36;item[&quot;key&quot;];</li>
+			<li>&nbsp;&nbsp;&nbsp;print(&quot;\&#39;&#36;label\&#39;&quot;);</li>
+			<li>}</li>
+			<li>print(&quot;&lt;/p&gt;&quot;);</li>
+			</ul>
+			<h3>3、Tell the difference between a CGI program and a PHP program executed by a Web Server.</h3>
+			<p>
+			When we request for a page, there is a way for each program executed by a web server.<br />
+			<b>PHP programs:</b><br />
+			user (client) request for page --> webserver(-> embedded PHP interpreter) --> Server side(PHP) Script --> MySQL Server.<br />
+			<b>CGI programs:</b><br />
+			user (client) request for page --> webserver --[CGI]--> Server side Program --> MySQL Server.<br />
+			In addition, the PHP code can be embed in html but the CGI programs should be seperated from web pages files.
+			</p>
+		</div>
+		
+		<!-- Hommwork2 -->
+		<div class = "title">
+			<p>Homework2 for Week 4</p>
+		</div>
+		<div class = "survey">
+			<a href = "homework4-2.php">Click here to see PHP test of my Apache</a> 
+		</div>
+		
+		<!-- Hommwork3 -->
+		<div class = "title">
+			<p>Homework3~5 for Week 4</p>
+		</div>		
+		<div class = "survey">
+			<a href = "homework4-3.php">Click here to do a survey(MySQL version)</a> 
+		</div>
+		
+		<!-- Hommwork4 -->
+		<!-- Hommwork5 -->
+	</div>
+	<div class = "end">Copyright © 周钊平（Zhou Zhaoping）</div>
+</body>
+
+</html>

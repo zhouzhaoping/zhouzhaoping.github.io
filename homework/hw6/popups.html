@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Pop Ups</title>
+	<link rel="stylesheet" type="text/css" href="../../mystyle.css" />
+	<link rel="stylesheet" type="text/css" href="mystyle.css" />
+	<link rel="stylesheet" type="text/css" href="code1style.css" />
+	<link rel="shortcut icon" href="../../images/favicon.ico" />
+	<script type="text/javascript">
+	<!--
+		function goURL() 
+		{
+			var url = prompt("Go to a URL:","http://162.105.146.183:8061/homework/hw6/index.html")
+			if (url != null && url != "")
+			{
+				window.location.assign(url);
+			}
+		}
+	-->
+	</script>
+</head>
+
+<body>
+	<!-- navbar -->
+	<div>
+		<ul class = "navigation">
+		<li><a href = "../../index.html">Home</a></li>
+		<li><a href = "http://162.105.146.183/b2evolution/blogs/index.php/zhouzhaoping/">My Blog</a></li>
+		<li><a id = "choice" href = "../../homework.html">Homework</a></li>
+		<li><a href = "../../aboutme.html">About me</a></li>
+		</ul>
+	</div>
+	<div class = "bar"></div>
+	<!-- navbar -->
+	
+	
+	<div class = "main">
+		<!-- Hommwork1 -->
+		<div class = "title">
+			<p>Homework3 for Week 6</p>
+		</div>
+		<div class = "content">
+			
+			<h3>1、Get a URL from the user using a popup then redirect page using location</h3>
+			<input type = "button" style = "font-size:30px" value = "Go to other URL" onclick = "goURL()" />
+			
+			<h3>2、Putting the mouse over the the Lime link displays a message in the status bar (bottom of window) - this is broken for the Lemon - how is it broken? Fix it!</h3>
+			<h4>And today's nonsense is ...</h4>
+			<p>Mr Pudding says: Do you want to go to 
+			<a href="#" onMouseOver="self.status='Off to the Lemon'; return true;"
+			onMouseOut="self.status='';" >the Lemon</a>?
+			<br /><br />or would you prefer the  
+			<a href="#" onMouseOver="self.status='Ah.... I see that you prefer the lime'; return true;"
+			onMouseOut="self.status='';">the Lime</a>?
+			</p>
+			
+			<h3>Tips</h3>
+			<p>Sometime you can't see the special messages in the status bar, and there are some steps to fix it:</p>
+			<p>Please keep the <a href = "#">TOP</a> of this page and don't scroll down, so that you can click.</p>
+			<p>If the above way doesn't work, you can try to configure your browser:</p>
+			<ol class = "orderlist">
+				<caption>In Firefox:</caption>
+				<li>Go to Tools > Options</li>
+				<li>Click the Content tab</li> 
+				<li>Ensure that the JavaScript option is checked</li>
+				<li>Click Advanced (next to the Enable JavaScript option)</li> 
+				<li>Check the Change status bar text option</li> 
+				<li>Click OK to save this screen</li>
+				<li>Click OK again</li>
+			</ol>
+			<ol class = "orderlist">
+				<caption>In Internet Explorer:</caption>
+				<li>Go to Tools > Internet Options</li> 
+				<li>Click the Security tab</li> 
+				<li>Ensure that the Internet option is selected/highlighted</li> 
+				<li>Click Custom Level....(this launches the security settings for the Internet zone)</li> 
+				<li>Scroll down until you see Allow status bar updates via script (under the Scripting option). Click Enable</li> 
+				<li>Click OK to save this screen</li> 
+				<li>Click OK again</li>
+			</ol>
+			<table id = "foot-nav">
+			<tr>
+			<td><p class = "left"><a href = "function.html" >&lt;&lt; Hommwork2:Function</a></p></td>
+			<td><p class = "center"><a href = "index.html">Return to Week6 Home</a></p></td>
+			<td><p class = "right"><a href = "objects.html">Hommwork4:Object &gt;&gt;</a></p></td>
+			</tr>
+			</table>
+			
+		</div>		
+	</div>
+	<div class = "end">Copyright © 周钊平（Zhou Zhaoping）</div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+h1
+{
+	color:#FF6700;
+	text-shadow: 5px 5px 5px black;
+}
+table
+{
+	width:100%;
+}
+div.survey
+{
+	margin:0 auto;
+	padding:30px;
+	border:5px solid #A64300;
+	text-align:center;
+	width:auto;
+	background-color:white;
+}
+
+div.survey h3
+{
+	color:#F10026;
+	text-shadow: 1px 1px 5px white;
+}
+
+div.survey p, div.survey li
+{
+	color:black;
+	font-size:18px;
+	list-style-type:none;
+	font-family:courier;
+	text-shadow: 1px 1px 1px white;
+}
+
+div.survey a
+{
+	border-radius: 7px 7px 7px 7px;
+	padding: 6px 8px 6px 8px;
+}
+
+div.survey a:link,a:visited
+{
+	color:black;
+	background-color:#98bf21;
+	text-decoration:none;
+	text-shadow:none;
+}
+		
+div.survey a:hover,a:active
+{
+	background-color:#7A991A;
+}

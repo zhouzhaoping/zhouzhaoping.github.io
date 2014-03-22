@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Function</title>
+	<link rel="stylesheet" type="text/css" href="../../mystyle.css" />
+	<link rel="stylesheet" type="text/css" href="mystyle.css" />
+	<link rel="stylesheet" type="text/css" href="code1style.css" />
+	<link rel="shortcut icon" href="../../images/favicon.ico" />
+	<script type="text/javascript">
+	<!--
+		function myAlert2()
+		{
+			var r = Math.floor(Math.random() * 100 + 1);
+			alert("get number:" + r);
+			document.getElementById("value1").innerHTML = r;
+			return r;
+		}
+		function doubleNumber()
+		{
+			var r = myAlert2() * 2;
+			document.getElementById("value2").innerHTML = r;
+		}
+		
+		function testEqual()
+		{
+			var str1 = document.getElementById("string1").value;
+			var str2 = document.getElementById("string2").value;
+			if (str1 == str2)
+				document.getElementById("equal").innerHTML = str1 + " == " + str2;
+			else
+				document.getElementById("equal").innerHTML = str1 + " != " + str2;
+		}
+	-->
+	</script>
+</head>
+
+<body>
+	<!-- navbar -->
+	<div>
+		<ul class = "navigation">
+		<li><a href = "../../index.html">Home</a></li>
+		<li><a href = "http://162.105.146.183/b2evolution/blogs/index.php/zhouzhaoping/">My Blog</a></li>
+		<li><a id = "choice" href = "../../homework.html">Homework</a></li>
+		<li><a href = "../../aboutme.html">About me</a></li>
+		</ul>
+	</div>
+	<div class = "bar"></div>
+	<!-- navbar -->
+	
+	
+	<div class = "main">
+		<!-- Hommwork1 -->
+		<div class = "title">
+			<p>Homework2 for Week 6</p>
+		</div>
+		<div class = "content">
+			
+			<h3>1、Output double whatever value is returned from function myAlert2.</h3>
+			<p>The value from myAlert2(random1~100):<span id = "value1"></span></p>
+			<p>The doubled return value from myAlert2:<span id = "value2"></span></p>
+			<input type="button" style = "font-size:30px" value = "Get a random number" onclick="doubleNumber()" />
+			
+			<h3>2、Write another function which takes 2 strings and returns them with  != between them (e.g. this != that), then output this new string.</h3>
+			<input type="text" id = "string1" value="this"/><input type="text" id = "string2" value="that"/>
+			<p>Test answer(output this new string): <span id = "equal"></span></p>
+			<input type="button" style = "font-size:30px" value = "Equal Or Not" onclick = "testEqual()" />
+			
+			<table id = "foot-nav">
+			<tr>
+			<td><p class = "left"><a href = "hiThere.html" >&lt;&lt; Hommwork1:Hi There</a></p></td>
+			<td><p class = "center"><a href = "index.html">Return to Week6 Home</a></p></td>
+			<td><p class = "right"><a href = "popups.html">Hommwork3:Pop Ups &gt;&gt;</a></p></td>
+			</tr>
+			</table>
+			
+		</div>		
+	</div>
+	<div class = "end">Copyright © 周钊平（Zhou Zhaoping）</div>
+</body>
+
+</html>

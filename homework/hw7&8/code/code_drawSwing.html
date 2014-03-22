@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Exported from Notepad++</title>
+<style type="text/css">
+span {
+	font-family: 'DejaVu Sans Mono';
+	font-size: 12pt;
+	color: #BDAE9D;
+}
+.sc0 {
+}
+.sc4 {
+	color: #FF3A83;
+}
+.sc5 {
+	color: #F6F080;
+}
+.sc10 {
+	color: #FFAA00;
+}
+.sc11 {
+	color: #F8F8F8;
+}
+.sc16 {
+	color: #FFAA00;
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #2A211C; "><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">java</span><span class="sc10">.</span><span class="sc11">awt</span><span class="sc10">.*;</span><span class="sc0">
+</span><span class="sc5">import</span><span class="sc0"> </span><span class="sc11">javax</span><span class="sc10">.</span><span class="sc11">swing</span><span class="sc10">.*;</span><span class="sc0">
+
+</span><span class="sc16">class</span><span class="sc0"> </span><span class="sc11">MyPanel</span><span class="sc0"> </span><span class="sc5">extends</span><span class="sc0"> </span><span class="sc11">JPanel</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">   
+    </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">paintComponent</span><span class="sc10">(</span><span class="sc11">Graphics</span><span class="sc0"> </span><span class="sc11">g</span><span class="sc10">)</span><span class="sc0">
+    </span><span class="sc10">{</span><span class="sc0">
+        </span><span class="sc5">super</span><span class="sc10">.</span><span class="sc11">paintComponent</span><span class="sc10">(</span><span class="sc11">g</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">setColor</span><span class="sc10">(</span><span class="sc11">Color</span><span class="sc10">.</span><span class="sc11">black</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">drawRect</span><span class="sc10">(</span><span class="sc4">10</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">10</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">420</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">200</span><span class="sc10">);</span><span class="sc0">
+        
+        </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">setColor</span><span class="sc10">(</span><span class="sc11">Color</span><span class="sc10">.</span><span class="sc11">red</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">drawRect</span><span class="sc10">(</span><span class="sc4">30</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">30</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">180</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">fillRect</span><span class="sc10">(</span><span class="sc4">50</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">50</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">140</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">120</span><span class="sc10">);</span><span class="sc0">
+        
+        </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">setColor</span><span class="sc10">(</span><span class="sc11">Color</span><span class="sc10">.</span><span class="sc11">green</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">drawOval</span><span class="sc10">(</span><span class="sc4">200</span><span class="sc0"> </span><span class="sc10">+</span><span class="sc0"> </span><span class="sc4">30</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">30</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">180</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">160</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">g</span><span class="sc10">.</span><span class="sc11">fillOval</span><span class="sc10">(</span><span class="sc4">200</span><span class="sc0"> </span><span class="sc10">+</span><span class="sc0"> </span><span class="sc4">50</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">50</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">140</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc4">120</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">class</span><span class="sc0"> </span><span class="sc11">drawSwing</span><span class="sc0"> </span><span class="sc5">extends</span><span class="sc0"> </span><span class="sc11">JApplet</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">Container</span><span class="sc0"> </span><span class="sc11">rectangleArea</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">getContentPane</span><span class="sc10">();</span><span class="sc0">
+    </span><span class="sc11">MyPanel</span><span class="sc0"> </span><span class="sc11">newPanel</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">MyPanel</span><span class="sc10">();</span><span class="sc0">
+    </span><span class="sc16">public</span><span class="sc0"> </span><span class="sc16">void</span><span class="sc0"> </span><span class="sc11">init</span><span class="sc10">()</span><span class="sc0">
+    </span><span class="sc10">{</span><span class="sc0">
+        </span><span class="sc11">rectangleArea</span><span class="sc10">.</span><span class="sc11">add</span><span class="sc10">(</span><span class="sc11">newPanel</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc10">}</span></div></body>
+</html>

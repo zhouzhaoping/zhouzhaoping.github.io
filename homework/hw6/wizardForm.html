@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Wizard Form</title>
+	<link rel="stylesheet" type="text/css"  href="../../mystyle.css" />
+	<link rel="stylesheet" type="text/css"  href="mystyle.css" />
+	<link rel="stylesheet" type="text/css"  href="code1style.css" />
+	<link rel="shortcut icon" href="../../images/favicon.ico" />
+	<script type="text/javascript">
+	<!--
+		function checkSubmit(form){
+			var mailReg = /^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/;
+			var ageReg = new RegExp("^[1-9]+[0-9]*$");
+			var idReg = new RegExp("^[0-9]*$");
+			
+			if(form.firstName.value==""){
+				alert("Please input your first name.");
+				form.firstName.focus();
+				return false;
+			}if(form.lastName.value==""){
+				alert("Please input your last name.");
+				form.lastName.focus();
+				return false;
+			}else if(form.age.value==""){
+				alert("Please input your age.");
+				form.age.focus();
+				return false;
+			}else if(!ageReg.test(form.age.value)){
+				alert("Please input your age in integer and can't begin with 0.");
+				form.age.focus();
+				return false;
+			}else if (form.age.value <= 5 || form.age.value >= 150){
+				alert("You age should be integer(5 < x < 150).");
+				form.age.focus();
+				return false;	
+			}else if(form.idNumber.value==""){
+				alert("Please input your ID Number.");
+				form.idNumber.focus();
+				return false;
+			}else if(!idReg.test(form.idNumber.value)){
+				alert("Please input your idNumber in integer.");
+				form.idNumber.focus();
+				return false;
+			}else if(form.email.value==""){
+				alert("Please input your email.");
+				form.email.focus();
+				return false;
+			}else if (!mailReg.test(form.email.value)) {
+				alert("please input right email address!");
+				return false;
+			}else
+				return confirm("Are you sure? Please check your information.");
+		}
+	-->
+	</script>
+</head>
+
+<body>
+	<!-- navbar -->
+	<div>
+		<ul class = "navigation">
+		<li><a href = "../../index.html">Home</a></li>
+		<li><a href = "http://162.105.146.183/b2evolution/blogs/index.php/zhouzhaoping/">My Blog</a></li>
+		<li><a id = "choice" href = "../../homework.html">Homework</a></li>
+		<li><a href = "../../aboutme.html">About me</a></li>
+		</ul>
+	</div>
+	<div class = "bar"></div>
+	<!-- navbar -->
+	
+	
+	<div class = "main">
+		<!-- Hommwork1 -->
+		<div class = "title">
+			<p>Homework5 for Week 6</p>
+		</div>
+		<div class = "content">
+			
+			<h3>No only the age has the check, but also name and email. And focus on your wrong input text.
+			Result can be save/delete/show by php and MySQL.
+			</h3>
+			<form action="collector.php" method="post" onSubmit="return checkSubmit(this)" >
+			<ol class = "orderlist">
+				<li><p>please identify and describe yourself:</p>
+				<table>
+				<tr>
+				<td align="right"><em>First Name</em></td>
+				<td><input type="text" name="firstName" size="25" /></td>
+				</tr><tr>
+				<td align="right"><em>Last Name</em></td>
+				<td><input type="text" name="lastName" size="25" /></td>
+				</tr><tr>
+				<td align="right"><em>Age</em></td>
+				<td><input type="text" name="age" size="3" maxlength="3" /></td>
+				</tr><tr>
+				<td align="right"><em>Sex</em></td>
+				<td><input type="radio" name="gender" value="male" checked="checked" />Male 
+				<input type="radio" name="gender" value="female"/>Female</td>
+				</tr><tr>
+				<td align="right"><em>ID Number</em></td>
+				<td><input type="text" name="idNumber" size="16" maxlength="16" /></td>
+				</tr>
+				</table></li>
+
+				<li><p>Choose one of the following options:</p>
+				<p><input type="radio" name="watch" value="dunno" checked="checked"/> I don't know?!
+				<br/><input type="radio" name="watch" value="radio"/> Radio
+				<br/><input type="radio" name="watch" value="tv"/> TV
+				<br/><input type="radio" name="watch" value="film"/> Film
+				<br/><br/>
+				</p></li>
+
+				<li><p>Choose one of the following options:</p>
+				<p><select name="holiday">
+				  <option value="Greece" selected="selected">Greece </option><option value="Italy">Italy </option>
+				  <option value="France">France </option><option value="Spain">spain</option>
+				</select>
+				<br/>
+				</p></li>
+				
+				<li><p>How would you rate your knowledge of JavaScript?</p>
+				<p>
+				  <input type="radio" name="knowledge" value="1" />1
+				  <input type="radio" name="knowledge" value="2" />2
+				  <input type="radio" name="knowledge" value="3" checked="checked" />3
+				  <input type="radio" name="knowledge" value="4"/>4
+				  <input type="radio" name="knowledge" value="5"/>5
+				  <br/>
+				</p></li>
+				
+				<li><p>Please input your email:</p>
+				<input type="text" name="email" size = "50"/>
+				</li>
+			</ol>
+			
+			<p>
+			<input type="button" style = "font-size:30px" value="Don't push Me" name="push" onclick="alert('Oops...\nYou can\'t press me');"/>
+			<input type="submit" style = "font-size:30px" value="Submit Form" />
+			<input type="reset" style = "font-size:30px" value="Reset Form" />
+			</p>
+			</form>
+			
+			<p class = "center"><a href = "showtable.php" >Click to see Result</a><p>
+			
+			<table id = "foot-nav">
+			<tr>
+			<td><p class = "left"><a href = "objects.html" >&lt;&lt; Hommwork4:Object</a></p></td>
+			<td><p class = "center"><a href = "index.html">Return to Week6 Home</a></p></td>
+			<td><p class = "right"><a href = "index.html#bonus">Bonus:More Functions &gt;&gt;</a></p></td>
+			</tr>
+			</table>
+		</div>
+		
+	</div>
+	<div class = "end">Copyright © 周钊平（Zhou Zhaoping）</div>
+</body>
+
+</html>
